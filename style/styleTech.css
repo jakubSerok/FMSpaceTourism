@@ -116,8 +116,16 @@ nav{
     font-weight: 700;
     opacity: 0.25;
 }
+.techContainer{
+    display: flex;
+    
+    gap: 3rem;
+}
 .techText{
-    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
     height: 303px;
 }
 .techText h2{
@@ -132,7 +140,7 @@ nav{
 .techBox h1{
     color: #FFF;
     font-family: 'Bellefair';
-    font-size: 56px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -148,6 +156,33 @@ nav{
 }
 .rightSide{
     padding-bottom: 9%;
+}
+.techButtons{
+    display: flex;
+    flex-direction: column;      
+    gap: 2rem;
+}
+.techButtons button{
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;    
+    border: solid 1px rgba(255, 255, 255, 0.336);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Bellefair';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+.techButtons button.active{
+    color: #0B0D17;
+    background-color: #FFF;
+}
+.techButtons button:hover{
+    border: solid 1px rgba(255, 255, 255, 1);
 }
 .hidden{
     display: none;
