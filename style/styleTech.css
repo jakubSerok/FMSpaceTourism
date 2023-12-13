@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 body{
-    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -91,14 +91,14 @@ nav{
     text-decoration: underline 3px #FFF;
     text-underline-offset: 36px;
 }
-.crewBox{
+.techBox{
     display: flex;
-    padding: 0px 9% ;
+    padding-left:  9%;
     justify-content: space-between;
 }
 .leftSide{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     justify-content: space-between;
     padding-bottom: 9%;
 }
@@ -116,31 +116,28 @@ nav{
     font-weight: 700;
     opacity: 0.25;
 }
-.crewText{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.techText{
+    width: 470px;
+    height: 303px;
 }
-.crewText h2{
-    color: #FFF;
-    font-family: 'Bellefair';
-    font-size: 32px;
+.techText h2{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
-    opacity: 0.5042;
+    letter-spacing: 2.7px;
 }
-.crewText h1{
+.techBox h1{
     color: #FFF;
     font-family: 'Bellefair';
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
 }
-.crewText p{
+.techBox p{
     width: 444px;
     color: #D0D6F9;
     font-family: 'Barlow';
@@ -149,11 +146,8 @@ nav{
     font-weight: 400;
     line-height: 32px; /* 177.778% */
 }
-svg circle{
-    cursor: pointer;
-}
-svg circle:hover{
-    opacity: 1;
+.rightSide{
+    padding-bottom: 9%;
 }
 .hidden{
     display: none;
