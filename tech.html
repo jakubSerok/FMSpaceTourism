@@ -14,16 +14,16 @@
     <img src="./assets/shared/logo.svg" alt="icon">
     <div class="rectangle"></div>
     <div class="linkbox">
-      <a href="index.html" ><p>00 <span>HOME</span></p></a>
-      <a href="destination.html"><p>01 <span>DESTINATION</span></p></a>
-      <a href="crew.html"><p>02 <span>CREW</span></p></a>
-      <a href="tech.html"class="active"><p>03 <span>TECHNOLOGY</span></p></a>
+      <a href="index.html" ><p class="number">00</p><p class="text">HOME</p></a>
+        <a href="destination.html" ><p class="number">01</p><p class="text">Destination</p></a>
+        <a href="crew.html" ><p class="number">02</p><p class="text">CREW</p></a>
+        <a href="tech.html"class="active"><p class="number">03</p><p class="text">TECHNOLOGY</p></a>
     </div>
   </nav>   
   <section class="tech">
     <div class="techBox">
         <div class="leftSide">
-            <h1><span>03</span> SPACE LAUNCH 101</h1>
+            <h1 class="tableText"><span>03</span> SPACE LAUNCH 101</h1>
             <div class="techContainer">
               <div class="techButtons">
                 <button class="active">1</button>
@@ -38,12 +38,16 @@
             </div>
         </div>
         <div class="rightSide">
-            <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="img">
+          <picture>
+            <source srcset="./assets/technology/image-launch-vehicle-portrait.jpg" media="(min-width: 769px)" />
+            <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="MDN" />
+          </picture>
+            
         </div>
     </div>
     <div class="techBox hidden">
       <div class="leftSide">
-          <h1><span>03</span> SPACE LAUNCH 101</h1>
+          <h1 class="tableText"><span>03</span> SPACE LAUNCH 101</h1>
           <div class="techContainer">
             <div class="techButtons">
               <button >1</button>
@@ -58,12 +62,15 @@
           </div>
       </div>
       <div class="rightSide">
-          <img src="./assets/technology/image-spaceport-portrait.jpg" alt="img">
+        <picture>
+          <source srcset="./assets/technology/image-spaceport-portrait.jpg" media="(min-width: 769px)" />
+          <img src="./assets/technology/image-spaceport-landscape.jpg" alt="MDN" />
+        </picture>
       </div>
   </div>
   <div class="techBox hidden">
     <div class="leftSide">
-        <h1><span>03</span> SPACE LAUNCH 101</h1>
+        <h1 class="tableText"><span>03</span> SPACE LAUNCH 101</h1>
         <div class="techContainer">
           <div class="techButtons">
             <button >1</button>
@@ -78,7 +85,10 @@
         </div>
     </div>
     <div class="rightSide">
-        <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="img">
+      <picture>
+        <source srcset="./assets/technology/image-space-capsule-portrait.jpg" media="(min-width: 769px)" />
+        <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="MDN" />
+      </picture>
     </div>
 </div>
     
