@@ -19,6 +19,10 @@ body{
     justify-content: space-between;
     
 }
+.linkTextCointainer{
+    display: flex;
+    gap: 8px;
+}
 nav{   
     display: flex;
     align-items: center;
@@ -168,6 +172,55 @@ nav{
 .explore:hover .bigCircle {
     opacity: 0.1036;     
 }
+.openBtn{
+    display: none;
+}
+.mobileMenu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 254px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);    
+    padding-left: 40px;
+    padding-top: 80px;    
+}
+.linkMobile{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.textMobile{
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+.textMobile span{
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+.closeBtn{
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.hidden{
+    display: none;
+}
 @media (max-width:768px){ 
     body{
         background-image: url("../assets/home/background-home-tablet.jpg");
@@ -213,5 +266,52 @@ nav{
     }
     .spaceBox p{        
         font-size: 16px;        
+    }
+    .bigCircle{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width:376px){ 
+    nav{
+        padding-top: 10px;
+        padding-right: 50px;
+    }
+    .linkbox{
+        display: none;
+    }
+    .openBtn{
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .spaceBox{
+        width: 327px;
+        align-items: center;
+    }
+    .spaceBox h1{
+        font-size: 80px;
+    }
+    .spaceBox h2{
+        
+        font-size: 16px;
+        
+    }
+    .spaceBox p{        
+        font-size: 15px;        
+    }
+    .explore{
+        bottom: 60px;
+    }
+    .explore a{
+        font-size: 20px;
+        letter-spacing: 1.25px;
+        font-weight: 400;
+        padding: 60px 25px;
+    }
+    .bigCircle{
+        width: 200px;
+        height: 200px;
     }
 }

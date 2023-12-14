@@ -1,4 +1,7 @@
 const planetBoxes = document.querySelectorAll('.planetBox');
+const openBtn = document.querySelector(".openBtn");
+const closeBtn = document.querySelector(".closeBtn");
+const menu = document.querySelector(".mobileMenu");
 
 planetBoxes.forEach(box => {
     // Find buttons and corresponding elements within each box
@@ -16,3 +19,14 @@ planetBoxes.forEach(box => {
         });
     });
 });;
+
+
+
+openBtn.addEventListener("click",function(){
+    menu.classList.remove("hidden");
+})
+
+closeBtn.addEventListener("click",function(){
+    menu.classList.add("hidden");
+})
+

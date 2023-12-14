@@ -14,10 +14,20 @@
     <img src="./assets/shared/logo.svg" alt="icon">
     <div class="rectangle"></div>
     <div class="linkbox">
-      <a href="index.html" ><p class="number">00</p><p class="text">HOME</p></a>
-        <a href="destination.html" ><p class="number">01</p><p class="text">Destination</p></a>
-        <a href="crew.html" class="active"><p class="number">02</p><p class="text">CREW</p></a>
-        <a href="tech.html"><p class="number">03</p><p class="text">TECHNOLOGY</p></a>
+      <a href="index.html" ><div class="linkTextCointainer"><p class="number">00</p><p class="text">HOME</p></div></a>
+      <a href="destination.html"><div class="linkTextCointainer"><p class="number">01</p><p class="text">Destination</p></div></a>
+      <a href="crew.html"class="active"><div class="linkTextCointainer"><p class="number">02</p><p class="text">CREW</p></div></a>
+      <a href="tech.html"><div class="linkTextCointainer"><p class="number">03</p><p class="text">TECHNOLOGY</p></div></a>
+    </div>
+    <button class="openBtn"><img src="./assets/shared/icon-hamburger.svg" alt="icon"></button>
+    <div class="mobileMenu hidden">
+      <button class="closeBtn"><img src="./assets/shared/icon-close.svg" alt="icon"></button>
+      <div class="linkMobile">
+        <a href="index.html" class="active"><p class="textMobile">00<span>   HOME</span></p></a>
+        <a href="destination.html"><p class="textMobile">01<span>   Destination</span></p></a>
+        <a href="crew.html"><p class="textMobile">02<span>   Crew</span></p></a>
+        <a href="tech.html"><p class="textMobile">03<span>   TECHNOLOGY</span></p></a>
+      </div>
     </div>
   </nav> 
   <section class="crew">

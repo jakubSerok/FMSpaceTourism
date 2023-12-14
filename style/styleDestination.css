@@ -18,6 +18,10 @@ body{
     flex-direction: column;   
     justify-content: space-between;
 }
+.linkTextCointainer{
+    display: flex;
+    gap: 8px;
+}
 nav{   
     display: flex;
     align-items: center;
@@ -46,7 +50,7 @@ nav{
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
 }
-.linkbox p{
+.linkbox .number{
     color: #FFF;
     font-family: 'Barlow Condensed';
     font-size: 16px;
@@ -55,7 +59,7 @@ nav{
     line-height: normal;
     letter-spacing: 2.7px;
 }
-.linkbox span{
+.linkbox .text{
     color: #FFF;
     font-family: 'Barlow Condensed';
     font-size: 16px;
@@ -187,6 +191,52 @@ nav{
     line-height: normal;
     text-transform: uppercase;
 }
+.openBtn{
+    display: none;
+}
+.mobileMenu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 254px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);    
+    padding-left: 40px;
+    padding-top: 80px;    
+}
+.linkMobile{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.textMobile{
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+.textMobile span{
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+.closeBtn{
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
 .hidden{
     display: none;
 }
@@ -226,6 +276,7 @@ nav{
         width: 100vw;
         height: 457px;
         align-items: center;
+        gap: 1.5rem;
         
     }
     .leftSide h1{
@@ -256,4 +307,49 @@ nav{
         font-size: 16px;
     }
     
+}
+@media (max-width:376px){ 
+    nav{
+        padding-top: 10px;
+        padding-right: 50px;
+    }
+    .linkbox{
+        display: none;
+    }
+    .openBtn{
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .leftSide{
+        height: 279px;
+    }
+    .leftSide h1{
+        font-size: 16px;
+    }
+    .leftSide img{
+        width: 200px;
+        height: 200px;
+    }
+    .links button{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .rightSide{
+        gap: 0.5rem;
+        width: 100vw;
+    }
+    .rightSide h1{
+        font-size: 56px;
+    }
+    .planetText{
+        width: 327px;
+        font-size: 15px;
+    }
+    .info{
+        margin-top: 20px;
+        flex-direction: column;
+        gap:2rem;
+    }
 }

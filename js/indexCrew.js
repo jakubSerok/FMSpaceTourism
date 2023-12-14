@@ -1,4 +1,7 @@
 const crewBoxes = document.querySelectorAll('.crewBox');
+const openBtn = document.querySelector(".openBtn");
+const closeBtn = document.querySelector(".closeBtn");
+const menu = document.querySelector(".mobileMenu");
 
 crewBoxes.forEach(box => {
     // Find buttons and corresponding elements within each box
@@ -18,3 +21,12 @@ crewBoxes.forEach(box => {
         });
     });
 });;
+
+openBtn.addEventListener("click",function(){
+    menu.classList.remove("hidden");
+})
+
+closeBtn.addEventListener("click",function(){
+    menu.classList.add("hidden");
+})
+

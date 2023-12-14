@@ -1,5 +1,7 @@
 const techBox = document.querySelectorAll('.techBox');
-
+const openBtn = document.querySelector(".openBtn");
+const closeBtn = document.querySelector(".closeBtn");
+const menu = document.querySelector(".mobileMenu");
 techBox.forEach(box => {
     // Find buttons and corresponding elements within each box
     const buttons = box.querySelectorAll('.techButtons button');    
@@ -16,3 +18,13 @@ techBox.forEach(box => {
         });
     });
 });;
+
+
+openBtn.addEventListener("click",function(){
+    menu.classList.remove("hidden");
+})
+
+closeBtn.addEventListener("click",function(){
+    menu.classList.add("hidden");
+})
+
